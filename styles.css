@@ -1,0 +1,78 @@
+/* Estilo básico */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #f06292;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+/* Estilo da galeria */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.photo-card {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Colocado aqui para facilitar a leitura */
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+}
+
+.photo-card p {
+    padding: 10px;
+}
+
+/* Estilo da mensagem */
+.message {
+    padding: 40px;
+}
+
+#more-text {
+    display: none; /* Isso não é necessário, pois você já usa a classe .hidden para controlar a visibilidade */
+}
+
+.hidden {
+    display: none; /* Mantém o conteúdo oculto */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #f06292;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e91e63;
+}
+
+/* Animações */
+.photo-card:hover {
+    transform: scale(1.05); /* Aumenta a foto ao passar o mouse */
+}
